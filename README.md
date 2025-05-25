@@ -72,6 +72,10 @@ Enable userdir mod:
 
 `sudo a2enmod userdir`
 
+Add execute permissions to user home directory:
+
+`sudo chmod +x /home/user`
+
 Edit configuration:
 
 `sudo nano /etc/apache2/mods-available/userdir.conf`
@@ -94,6 +98,8 @@ Create directory:
 Restart Apache:
 
 `sudo systemctl restart apache2`
+
+Now, you can access files using `http://<server-address>/~user`
 
 # 4.2 Configure sites-enabled:
 
