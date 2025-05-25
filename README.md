@@ -107,7 +107,7 @@ This will allow to access project files using domain name.
 
 Create new file:
 
-`sudo nano /etc/apache2/sites-enabled/my-site.conf`
+`sudo nano /etc/apache2/sites-available/my-site.conf`
 
 ```
 <VirtualHost *:80>
@@ -123,6 +123,10 @@ Create new file:
 ```
 
 Remember to configure hosts file, so that domain name will be resolved to localhost.
+
+Enable site:
+
+`sudo a2ensite my-site`
 
 Restart Apache:
 
