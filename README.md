@@ -148,3 +148,17 @@ file_put_contents($filename, $input);
 ```
 
 After doing that, email will be accessible in `/var/log/mail` directory.
+
+# 6. Switching between PHP versions:
+
+Disable PHP version:
+
+`sudo a2dismod php7.4`
+
+Enable PHP version:
+
+`sudo a2enmod php8.4`
+
+Change PHP used in system:
+
+`sudo update-alternatives --config php`
