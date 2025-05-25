@@ -128,6 +128,10 @@ Enable site:
 
 `sudo a2ensite my-site`
 
+Enable rewrite mod:
+
+`sudo a2enmod rewrite`
+
 Restart Apache:
 
 `sudo systemctl restart apache2`
