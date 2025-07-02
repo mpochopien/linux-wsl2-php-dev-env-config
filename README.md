@@ -144,6 +144,8 @@ Enable rewrite mod:
 
 `sudo a2enmod rewrite`
 
+Change listen address to `0.0.0.0:80` in `sudo nano /etc/apache2/ports.conf`, so that we can access files from Windows.
+
 Restart Apache:
 
 `sudo systemctl restart apache2`
