@@ -101,6 +101,18 @@ Restart Apache:
 
 Now, you can access files using `http://<server-address>/~user`
 
+Remember, to comment disabling of PHP execution in user directory (depending on the config):
+
+`sudo nano /etc/apache2/mods-available/php8.4.conf`
+
+```
+#<IfModule mod_userdir.c>
+#    <Directory /home/*/public_html>
+#        php_admin_flag engine Off
+#    </Directory>
+#</IfModule>
+```
+
 # 4.2 Configure sites-enabled:
 
 This will allow to access project files using domain name.
