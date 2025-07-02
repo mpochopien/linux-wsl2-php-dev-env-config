@@ -52,7 +52,7 @@ Switch user to mysql:
 
 Create user:
 
-`CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';`
+`CREATE USER 'user'@'%' IDENTIFIED BY 'password';`
 
 Grant privileges:
 
