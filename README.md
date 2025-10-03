@@ -165,6 +165,16 @@ $filename = '/var/log/mail/' . time() . '.eml';
 file_put_contents($filename, $input);
 ```
 
+```sudo nano \etc\php\8.4\apache2\php.ini```
+
+Add `sendmail_path = \usr\local\bin\sendmail`
+
+Then, we can create folder in logs, with correct permissions:
+```
+sudo mkdir -p /var/log/mail
+sudo chown www-data:www-data /var/log/mail
+```
+
 After doing that, email will be accessible in `/var/log/mail` directory.
 
 # 6. Switching between PHP versions:
